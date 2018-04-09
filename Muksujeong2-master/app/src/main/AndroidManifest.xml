@@ -28,7 +28,6 @@
             android:name="com.kakao.sdk.AppKey"
             android:value="@string/kakao_app_key" />
 
-        <activity android:name=".LoginSuccessActivity" />
         <activity
             android:name="com.kakao.auth.authorization.authcode.KakaoWebViewActivity"
             android:launchMode="singleTop"
@@ -43,7 +42,8 @@
         <activity android:name=".FindMine" />
         <activity android:name=".GoOut" />
         <activity android:name=".School" />
-        <activity android:name=".Restaurants"></activity>
+        <activity android:name=".Restaurants" />
+        <activity android:name=".AddMine"></activity>
     </application>
 
 </manifest>

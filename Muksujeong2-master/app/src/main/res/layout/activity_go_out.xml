@@ -55,4 +55,14 @@
             android:text="회식"
             android:onClick="onButton"/>
     </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/allstore"
+            android:text="전체보기"/>
+    </LinearLayout>
 </LinearLayout>

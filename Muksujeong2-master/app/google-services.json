@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1048966585917",
+    "firebase_url": "https://muksujeong.firebaseio.com",
+    "project_id": "muksujeong",
+    "storage_bucket": "muksujeong.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1048966585917:android:43e437f88f3d5e8f",
+        "android_client_info": {
+          "package_name": "org.androidtown.muksujung"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1048966585917-67g5ppbfssngrglgfbd63627ofm9aht2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBb4Ylfd-NNF3N8VWlcNY-wl75nd3uIYnM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
