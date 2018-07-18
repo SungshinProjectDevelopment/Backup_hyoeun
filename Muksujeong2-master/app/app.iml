@@ -145,6 +145,7 @@
     <orderEntry type="library" name="com.android.support:support-vector-drawable-26.1.0" level="project" />
     <orderEntry type="library" name="com.google.android.gms:play-services-basement-12.0.0" level="project" />
     <orderEntry type="library" name="com.android.support:support-core-utils-26.1.0" level="project" />
+    <orderEntry type="library" name="com.getbase:floatingactionbutton-1.10.1" level="project" />
     <orderEntry type="library" scope="TEST" name="com.android.support.test:rules-1.0.1" level="project" />
     <orderEntry type="library" name="__local_aars__:C.\Users\hyon1001\Desktop\backup_180326\Muksujeong2\Muksujeong2-master\app\libs\simplexmlparser.jar:unspecified@jar" level="project" />
     <orderEntry type="library" name="com.google.firebase:firebase-analytics-12.0.0" level="project" />
@@ -156,5 +157,6 @@
     <orderEntry type="library" name="__local_aars__:C.\Users\hyon1001\Desktop\backup_180326\Muksujeong2\Muksujeong2-master\app\libs\libDaumMapAndroid.jar:unspecified@jar" level="project" />
     <orderEntry type="library" name="com.google.firebase:firebase-analytics-impl-license-12.0.0" level="project" />
     <orderEntry type="library" name="com.google.firebase:firebase-iid-license-12.0.0" level="project" />
+    <orderEntry type="library" name="org.apache.http.legacy-android-26" level="project" />
   </component>
 </module>

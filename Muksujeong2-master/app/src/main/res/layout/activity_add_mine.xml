@@ -1,38 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <Button
+            android:id="@+id/btn_close"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:text="취소"
+            android:layout_gravity="left"
+            android:backgroundTint="#7C4D3FB8"
+
+            />
+        <Button
+            android:id="@+id/btn_apply"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:text="글쓰기"
+            android:layout_gravity="right"
+            android:backgroundTint="#7C4D3FB8"
+
+            />
+
+    </android.support.v7.widget.Toolbar>
+
     <EditText
+        android:hint="제목"
+        android:id="@+id/addmine_posttitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:id="@+id/text_addmine_posttitle"
-        android:hint="제목"/>
+        android:textSize="20sp" />
 
-    <EditText
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:id="@+id/text_addmine_storename"
-        android:hint="음식점 이름"/>
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="25"
+            android:id="@+id/addmine_storename"
+            android:hint="음식점 이름"
+            android:textSize="20sp"/>
+
+        <RatingBar
+            android:id="@+id/addmine_ratingbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:numStars="5"
+            android:rating="2.5"
+            android:stepSize="0.5" />
+    </LinearLayout>
 
     <EditText
+        android:hint="내용"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="20"
-        android:id="@+id/text_addmine_post"
-        android:hint="내용"/>
-
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:id="@+id/btn_addmine"
-        android:onClick="onClick"
-        android:text="글쓰기"/>
-
-
+        android:id="@+id/addmine_postbody"
+        android:gravity="left"/>
 </LinearLayout>

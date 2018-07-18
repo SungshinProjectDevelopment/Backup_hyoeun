@@ -39,11 +39,18 @@
             </intent-filter>
         </activity>
         <activity android:name=".MainActivity" />
-        <activity android:name=".FindMine" />
-        <activity android:name=".GoOut" />
-        <activity android:name=".School" />
+        <activity android:name=".MineList" />
         <activity android:name=".Restaurants" />
-        <activity android:name=".AddMine"></activity>
+
+        <!-- <activity android:name=".Restaurants" > -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.VIEW"/> -->
+        <!-- <category android:name="android.intent.category.DEFAULT"/> -->
+        <!-- <category android:name="android.intent.category.BROWSABLE"/> -->
+        <!-- </intent-filter> -->
+        <!-- </activity> -->
+        <activity android:name=".AddMine" />
+        <activity android:name=".SearchAll" />
     </application>
 
 </manifest>

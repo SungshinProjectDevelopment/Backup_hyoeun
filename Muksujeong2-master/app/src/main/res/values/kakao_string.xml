@@ -1,6 +1,5 @@
 <resources>
-    <!--<string name="kakao_app_key">582dd88aabc81908908a368e5e51f9a2</string>-->
+    <!--<string name="kakao_app_key">582dd88aabc81908908a368e5e51f9a2</string>  효은 native-->
     <string name="kakao_app_key">582dd88aabc81908908a368e5e51f9a2</string>
-    <!--<string name="kakao_app_key">6f504f9b73ad280372b2aff0036b6f32</string>-->
-
+    <!--<string name="kakao_app_key">fc70e3bbfea5118f69ad2b7a604b4792</string> 수빈 native-->
 </resources>

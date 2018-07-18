@@ -34,8 +34,8 @@ public class NetworkManager{
     }
 
     public interface OnResultListener<T>{
-        public void onSuccess(NetworkRequest<T> request, T result);
-        public void onFailure(NetworkRequest<T> request, int errorCode, int responseCode, String message, Throwable exception);
+        void onSuccess(NetworkRequest<T> request, T result);
+        void onFailure(NetworkRequest<T> request, int errorCode, int responseCode, String message, Throwable exception);
 
     }
 

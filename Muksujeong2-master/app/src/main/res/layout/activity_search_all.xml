@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/searchall_map_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/searchall_restaurant_search_text"
+            android:hint="검색할 식당을 쓰세요"
+            android:layout_weight="3"
+            android:singleLine="true"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="찾기"
+                    android:layout_weight="1"
+                    android:id="@+id/searchall_restaurant_search_button"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="위치"
+            android:layout_weight="1"
+            android:id="@+id/searchall_current_location_button" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/searchall_scrollItems"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#ffffff"
+        android:fillViewport="true"
+        android:layout_weight="1">
+
+        <ListView
+            android:id="@+id/searchall_restaurant_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </ListView>
+    </ScrollView>
+
+</LinearLayout>
+

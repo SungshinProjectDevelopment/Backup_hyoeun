@@ -4,6 +4,7 @@ import android.util.Log;
 
 /**
  * Created by hyon1001 on 2018-04-02.
+ * 검색 시 받아오는 아이템 하나.
  */
 
 public class StoreItem {

@@ -108,30 +108,21 @@ public abstract class NetworkRequest<T> implements Runnable {
                 }
                 conn.setRequestMethod(method);
                 setRequestHeader(conn);
-                setConfiguration(conn); // 부가적인 설정을 하는 역할, 이 예제에서는 사용 안함
+                setConfiguration(conn);
                 conn.setConnectTimeout(getTimeout());
                 conn.setReadTimeout(getTimeout());
-                if (isCancel) {
-                    return;
-                }
+                if (isCancel) { return; }
                 if (conn.getDoOutput()) {
                     OutputStream out = conn.getOutputStream();
                     setOutput(out);
                 }
-                if (isCancel) {
-                    return;
-                }
-
+                if (isCancel) { return; }
                 int code = conn.getResponseCode();
-                if (isCancel) {
-                    return;
-                }
+                if (isCancel) { return; }
                 if (code >= HttpURLConnection.HTTP_OK && code < HttpURLConnection.HTTP_MULT_CHOICE) {
                     InputStream is = conn.getInputStream();
                     result = parse(is);
-                    if (isCancel) {
-                        return;
-                    }
+                    if (isCancel) { return; }
                     manager.sendSuccess(this);
                     return;
                 }

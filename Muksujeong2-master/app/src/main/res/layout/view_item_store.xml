@@ -4,17 +4,17 @@
     android:layout_height="wrap_content"
     android:orientation="horizontal">
 
-    <org.androidtown.muksujung.URLImageView
-        android:id="@+id/image_icon"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:src="@mipmap/ic_launcher"/>
+    <!--<org.androidtown.muksujung.URLImageView-->
+        <!--android:id="@+id/image_icon"-->
+        <!--android:layout_width="50dp"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:src="@mipmap/ic_launcher"/>-->
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_marginLeft="30dp">
+        android:layout_marginLeft="10dp">
 
         <TextView
             android:id="@+id/itemstore_text_title"

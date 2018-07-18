@@ -14,12 +14,9 @@ public class SplashActivity extends AppCompatActivity {
 
         new Handler().postDelayed(new Runnable() {
             public void run() {
-                startActivity(new Intent(SplashActivity.this, LoginActivity.class));
+                startActivity(new Intent(SplashActivity.this, LoginActivity.class)); // 카카오톡 로그인
                 finish();
             }
         }, 2000);
-
     }
-
-
 }

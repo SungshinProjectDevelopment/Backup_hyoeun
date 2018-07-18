@@ -8,19 +8,106 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="2"
-        android:gravity="center">
-        <Button
-            android:id="@+id/goout"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="10dp">
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="외부 식당"
-            android:onClick="onButton"/>
-        <Button
-            android:id="@+id/school"
-            android:layout_width="wrap_content"
+            android:text="테마"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:paddingBottom="15dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="학식"
-            android:onClick="onButton"/>
+            android:layout_margin="5dp"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/alone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/round"
+                android:backgroundTint="#7C4D3FB8"
+                android:onClick="onButton"
+                android:text="혼밥" />
+
+            <Button
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/round"
+                android:backgroundTint="#7C4D3FB8"
+                android:onClick="onButton"
+                android:text="데이트" />
+
+            <Button
+                android:id="@+id/family"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/round"
+                android:backgroundTint="#7C4D3FB8"
+                android:onClick="onButton"
+                android:text="가족과" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/brunch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/round"
+                android:backgroundTint="#7C4D3FB8"
+                android:onClick="onButton"
+                android:text="브런치" />
+
+            <Button
+                android:id="@+id/bakery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/round"
+                android:backgroundTint="#7C4D3FB8"
+                android:onClick="onButton"
+                android:text="베이커리" />
+
+            <Button
+                android:id="@+id/group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/round"
+                android:backgroundTint="#7C4D3FB8"
+                android:onClick="onButton"
+                android:text="회식" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/searchAll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round"
+                android:backgroundTint="#7C4D3FB8"
+                android:onClick="onButton"
+                android:text="전체보기" />
+        </LinearLayout>
     </LinearLayout>
 
     <LinearLayout
@@ -33,7 +120,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="지뢰찾기"
-            android:onClick="onButton"/>
+            android:onClick="onButton"
+            android:background="@drawable/round"
+            android:backgroundTint="#7C4D3FB8"
+            />
     </LinearLayout>
 
 </LinearLayout>

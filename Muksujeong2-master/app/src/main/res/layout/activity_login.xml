@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,9 +8,30 @@
     android:gravity="center">
 
     <ImageView
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:src="@drawable/login_icon" />
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/login_back4" />
+
+    <com.kakao.usermgmt.LoginButton
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="430dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/round"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="500dp"
+        android:layout_marginLeft="39.1dp"
+        android:layout_marginRight="39.1dp"
+        android:text="로그인 시, 서비스 이용 약관 및 개인정보 취급 방침에 모두 동의하는 것으로 처리 됩니다."
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"/>
+
+</RelativeLayout>
+
 
     <!--<EditText
         android:id="@+id/loginActivity_edittext_id"
@@ -37,11 +58,3 @@
         android:layout_height="wrap_content"
         android:text="회원가입" />
 -->
-
-    <com.kakao.usermgmt.LoginButton
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="10dp"/>
-
-</LinearLayout>

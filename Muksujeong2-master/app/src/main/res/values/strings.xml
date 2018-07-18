@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">먹수정</string>
+    <string name="app_name"></string>
+    <string name="keyword_theme">성신여대 </string>
 </resources>

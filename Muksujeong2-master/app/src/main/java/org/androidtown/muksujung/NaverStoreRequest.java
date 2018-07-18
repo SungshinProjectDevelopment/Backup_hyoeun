@@ -1,5 +1,7 @@
 package org.androidtown.muksujung;
 
+import android.util.Log;
+
 import com.begentgroup.xmlparser.XMLParser;
 
 import java.io.InputStream;
@@ -16,7 +18,7 @@ import java.text.ParseException;
 
 public class NaverStoreRequest extends NetworkRequest<NaverStores> {
 
-    String keyword;
+    public String keyword;
     int start, display;
 
     public NaverStoreRequest(String keyword) {
@@ -30,15 +32,16 @@ public class NaverStoreRequest extends NetworkRequest<NaverStores> {
     public NaverStoreRequest(String keyword, int start, int display) {
 
         try {
-            this.keyword = URLEncoder.encode("성신여대 " + keyword,"utf-8");
+            this.keyword = URLEncoder.encode(keyword,"utf-8");
 
         } catch (UnsupportedEncodingException e) {
             e.printStackTrace();
         }
         this.start =start;
         this.display = display;
-    }
+        Log.i("NaverStoreRequest", keyword);
 
+    }
 
     private static final String URL_FORMAT = "https://openapi.naver.com/v1/search/local.xml?query=%s&display=%s&start=%s";
     @Override

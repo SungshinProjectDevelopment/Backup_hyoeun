@@ -1,5 +1,3 @@
-//제일최근것.180405
-
 package org.androidtown.muksujung;
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,30 +7,49 @@ import android.widget.Button;
 
 
 public class MainActivity extends AppCompatActivity {
-    Button goout,school,findmine;
+    Button findmine;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        goout = (Button)findViewById(R.id.goout);
-        school = (Button)findViewById(R.id.school);
         findmine = (Button)findViewById(R.id.findmine);
     }
 
     public void onButton(View v) {
-        Intent i;
+        Intent i = new Intent(this,Restaurants.class);
         switch (v.getId()){
-            case R.id.goout:
-                i = new Intent(this,GoOut.class);
+
+            case R.id.alone:
+                i.putExtra("theme_keyword", "성신여대 혼밥");
                 startActivity(i);
                 break;
-            case R.id.school:
-                i = new Intent(this,School.class);
+            case R.id.date:
+                i.putExtra("theme_keyword", "성신여대 데이트");
                 startActivity(i);
+                break;
+            case R.id.family:
+                i.putExtra("theme_keyword", "성신여대 가족식사");
+                startActivity(i);
+                break;
+            case R.id.brunch:
+                i.putExtra("theme_keyword", "성신여대 브런치");
+                startActivity(i);
+                break;
+            case R.id.bakery:
+                i.putExtra("theme_keyword", "성신여대 베이커리");
+                startActivity(i);
+                break;
+            case R.id.group:
+                i.putExtra("theme_keyword", "성신여대 회식");
+                startActivity(i);
+                break;
+            case R.id.searchAll:
+                Intent i2 = new Intent(this, SearchAll.class);
+                startActivity(i2);
                 break;
             case R.id.findmine:
-                i = new Intent(this,FindMine.class);
+                i = new Intent(this,MineList.class);
                 startActivity(i);
                 break;
         }
